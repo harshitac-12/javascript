@@ -16,7 +16,10 @@ let booleanIsLoggedIn = Boolean(isLoggedIn); //true
 console.log(booleanIsLoggedIn);
 //"harsh" =>true
 //" " => false
- let someNumber = String(someNumber)
- console.log(someNumber); //33
- console.log(typeof someNumber); //string
+ let stringNumber = String(someNumber)
+ console.log(stringNumber); //33
+ console.log(typeof stringNumber); //string
+
+
+
  

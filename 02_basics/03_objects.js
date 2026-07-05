@@ -4,7 +4,7 @@
 
 // object literals=> const obj ={}
 const mySym = Symbol("key1")
-//symbol is a unique and immutable primitibe value
+//symbol is a unique and immutable primitive value
 
 const s1 = Symbol("id")
 const s2 = Symbol("id")
@@ -29,16 +29,18 @@ console.log(JsUser["full name"])
 console.log(JsUser[mySym]) //accesing symbol
 
 JsUser.email = "hitesh@chatgpt.com"
-Object.freeze(JsUser)  //this makes the objects immutable
+//Object.freeze(JsUser)  //this makes the objects immutable(prevent adding,deleting or modifying properties)
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
+//adding methods => functions stored inside objects are called methods
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
-}
+    console.log(`Hello JS user, ${this.name}`);//this refers to the objects that called the method
+} //this.name => JsUser.name
 
-console.log(JsUser.greeting());
+//console.log(function())=>prints the function's return value
+console.log(JsUser.greeting()); //it prints hello JS user but do not return anything hence o/p is undefined
 console.log(JsUser.greetingTwo());

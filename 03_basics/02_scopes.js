@@ -52,7 +52,7 @@ function addone(num){
 //function declarations are hoisted, js first loads the function into memory before executing the code
 
 
-
+//function expression
 addTwo(5)
 const addTwo = function(num){
     return num + 2

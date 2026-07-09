@@ -43,4 +43,4 @@ JsUser.greetingTwo = function(){
 
 //console.log(function())=>prints the function's return value
 console.log(JsUser.greeting()); //it prints hello JS user but do not return anything hence o/p is undefined
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greetingTwo()); //op=>undefined
